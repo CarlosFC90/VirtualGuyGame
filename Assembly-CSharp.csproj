@@ -56,6 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\Checkground.cs" />
+    <Compile Include="Assets\Scripts\FruitCollected.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
