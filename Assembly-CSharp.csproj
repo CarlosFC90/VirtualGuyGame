@@ -56,14 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\Checkground.cs" />
-=======
     <Compile Include="Assets\Scripts\EnemySpike.cs" />
     <Compile Include="Assets\Scripts\Checkground.cs" />
     <Compile Include="Assets\Scripts\DamageObject.cs" />
     <Compile Include="Assets\Scripts\FruitManager.cs" />
->>>>>>> Version1
     <Compile Include="Assets\Scripts\FruitCollected.cs" />
   </ItemGroup>
   <ItemGroup>
