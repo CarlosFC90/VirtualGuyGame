@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class FruitManager : MonoBehaviour
 {
     public Text levelCleared;
+    public GameObject transition;
 
     private void Update()
     {
@@ -18,6 +19,7 @@ public class FruitManager : MonoBehaviour
         if (transform.childCount == 0)
         {
             levelCleared.gameObject.SetActive(true);
+            transition.SetActive(true);
             Invoke("ChangeScene", 1);
         }
     }
