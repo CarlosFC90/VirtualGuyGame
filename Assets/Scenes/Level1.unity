@@ -1259,7 +1259,7 @@ GameObject:
   - component: {fileID: 336163688}
   m_Layer: 0
   m_Name: Idle
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2557,6 +2557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 2
   jumpSpeed: 3
+  doubleJumpSpeed: 2.5
   betterJump: 1
   fallMultiplier: 0.5
   lowJumpMultiplier: 1
@@ -3092,7 +3093,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0019934655, y: -0.15508372}
+  m_Offset: {x: 0.00006300956, y: -0.15959176}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3103,7 +3104,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.013114072, y: 0.0035467744}
+  m_Size: {x: 0.118321255, y: 0.0030722618}
   m_EdgeRadius: 0
 --- !u!114 &796669505
 MonoBehaviour:
@@ -3212,7 +3213,7 @@ GameObject:
   - component: {fileID: 851212416}
   m_Layer: 0
   m_Name: Idle (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6226,7 +6227,7 @@ GameObject:
   - component: {fileID: 1695910953}
   m_Layer: 0
   m_Name: Idle (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7144,7 +7145,7 @@ GameObject:
   - component: {fileID: 1972682135}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
