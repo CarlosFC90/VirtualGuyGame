@@ -6,6 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     public float runSpeed = 2;
     public float jumpSpeed = 3;
+    public float doubleJumpSpeed = 2.5f;
     Rigidbody2D rb2D;
 
     public bool betterJump = false;
@@ -15,11 +16,60 @@ public class PlayerMove : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Animator animator;
 
+    private bool canDoubleJump;
+
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
     }
 
+    private void Update()
+    {
+        if (Input.GetKey("space") )
+        {
+            if (Checkground.isGrounded)
+            {
+                canDoubleJump = true;
+                rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
+            }
+            else
+            {
+                if (Input.GetKeyDown("space"))
+                {
+                    if (canDoubleJump)
+                    {
+                        animator.SetBool("DoubleJump", true);
+                        rb2D.velocity = new Vector2(rb2D.velocity.x, doubleJumpSpeed);
+                        canDoubleJump = false;
+                    }
+                }
+            }
+           
+        }
+
+        if (Checkground.isGrounded == false)
+        {
+            animator.SetBool("Jump", true);
+            animator.SetBool("Run", false);
+        }
+
+        if (Checkground.isGrounded == true)
+        {
+            animator.SetBool("Jump", false);
+            animator.SetBool("DoubleJump", false);
+            animator.SetBool("Falling", false);
+
+        }
+
+        if (rb2D.velocity.y < 0)
+        {
+            animator.SetBool("Falling", true);
+        }
+        else if (rb2D.velocity.y > 0)
+        {
+            animator.SetBool("Falling", false);
+        }
+    }
     
     void FixedUpdate()
     {
@@ -41,23 +91,6 @@ public class PlayerMove : MonoBehaviour
         {
             rb2D.velocity = new Vector2(0, rb2D.velocity.y);
             animator.SetBool("Run", false);
-        }
-
-        if (Input.GetKey("space") && Checkground.isGrounded)
-        {
-            rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
-        }
-
-        if (Checkground.isGrounded == false)
-        {
-            animator.SetBool("Jump", true);
-            animator.SetBool("Run", false);
-        }
-        
-        if (Checkground.isGrounded == true)
-        {
-            animator.SetBool("Jump", false);
-            
         }
 
         //Con esta funcion generamos un salto mas alto si se mantiene presionada la barra de espacio al saltar
