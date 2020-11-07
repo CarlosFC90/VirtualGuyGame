@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class UIManager : MonoBehaviour
 {
     public GameObject optionsPanel;
+    public AudioSource clip;
 
     public void OptionsPanel()
     {
@@ -31,5 +33,10 @@ public class UIManager : MonoBehaviour
     {
         //Solo funciona cuando se realiza el ejecutable en pc
         Application.Quit();
+    }
+
+    public void PlaySoundButton()
+    {
+        clip.Play();
     }
 }

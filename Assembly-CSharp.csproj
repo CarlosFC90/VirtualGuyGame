@@ -61,10 +61,10 @@
     <Compile Include="Assets\Scripts\PlayerRespawn.cs" />
     <Compile Include="Assets\Scripts\CheckPoint.cs" />
     <Compile Include="Assets\Scripts\DamageObject.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\PlatformMove.cs" />
     <Compile Include="Assets\Scripts\FruitManager.cs" />
     <Compile Include="Assets\Scripts\FruitCollected.cs" />
-    <Compile Include="Assets\Scripts\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
