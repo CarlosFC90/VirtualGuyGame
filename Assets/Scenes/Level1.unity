@@ -11975,6 +11975,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 28152292, guid: 1715c6231bd0eb742a80b6902825170c, type: 3}
+      propertyPath: m_Text
+      value: Sound Off/On
+      objectReference: {fileID: 0}
     - target: {fileID: 545509244, guid: 1715c6231bd0eb742a80b6902825170c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -12003,6 +12007,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 853401573, guid: 1715c6231bd0eb742a80b6902825170c, type: 3}
+      propertyPath: m_Name
+      value: ButtonQuit
+      objectReference: {fileID: 0}
     - target: {fileID: 853401575, guid: 1715c6231bd0eb742a80b6902825170c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -12058,6 +12066,10 @@ PrefabInstance:
     - target: {fileID: 935508479, guid: 1715c6231bd0eb742a80b6902825170c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137413118, guid: 1715c6231bd0eb742a80b6902825170c, type: 3}
+      propertyPath: m_Name
+      value: ButtonOptions
       objectReference: {fileID: 0}
     - target: {fileID: 2137413120, guid: 1715c6231bd0eb742a80b6902825170c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

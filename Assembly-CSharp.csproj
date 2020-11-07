@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\PlatformMove.cs" />
     <Compile Include="Assets\Scripts\FruitManager.cs" />
     <Compile Include="Assets\Scripts\FruitCollected.cs" />
+    <Compile Include="Assets\Scripts\AudioController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

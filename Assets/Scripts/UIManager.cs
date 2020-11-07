@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
 {
     public GameObject optionsPanel;
     public AudioSource clip;
+    public bool isMuted = false;
 
     public void OptionsPanel()
     {
@@ -26,6 +27,8 @@ public class UIManager : MonoBehaviour
     public void AnotherOptins()
     {
         //Sound
+        isMuted = !isMuted;
+        AudioListener.pause = isMuted;
         //Graphic
     }
 
