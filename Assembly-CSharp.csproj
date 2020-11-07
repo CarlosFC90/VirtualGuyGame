@@ -44,10 +44,6 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Version1
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
@@ -65,23 +61,12 @@
     <Compile Include="Assets\Scripts\PlayerRespawn.cs" />
     <Compile Include="Assets\Scripts\CheckPoint.cs" />
     <Compile Include="Assets\Scripts\DamageObject.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\FruitManager.cs" />
-    <Compile Include="Assets\Scripts\FruitCollected.cs" />
-  </ItemGroup>
-=======
->>>>>>> Version1
-=======
-=======
     <Compile Include="Assets\Scripts\UIManager.cs" />
->>>>>>> Version1
     <Compile Include="Assets\Scripts\PlatformMove.cs" />
     <Compile Include="Assets\Scripts\FruitManager.cs" />
-    <Compile Include="Assets\Scripts\FruitCollected.cs" />
     <Compile Include="Assets\Scripts\AudioController.cs" />
+    <Compile Include="Assets\Scripts\FruitCollected.cs" />
   </ItemGroup>
->>>>>>> Version1
   <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
