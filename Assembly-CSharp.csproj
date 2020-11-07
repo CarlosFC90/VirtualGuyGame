@@ -66,16 +66,20 @@
     <Compile Include="Assets\Scripts\CheckPoint.cs" />
     <Compile Include="Assets\Scripts\DamageObject.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\FruitManager.cs" />
     <Compile Include="Assets\Scripts\FruitCollected.cs" />
   </ItemGroup>
 =======
 >>>>>>> Version1
 =======
+=======
+    <Compile Include="Assets\Scripts\UIManager.cs" />
+>>>>>>> Version1
     <Compile Include="Assets\Scripts\PlatformMove.cs" />
     <Compile Include="Assets\Scripts\FruitManager.cs" />
     <Compile Include="Assets\Scripts\FruitCollected.cs" />
-    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\AudioController.cs" />
   </ItemGroup>
 >>>>>>> Version1
   <ItemGroup>
