@@ -64,7 +64,10 @@
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\PlatformMove.cs" />
     <Compile Include="Assets\Scripts\FruitManager.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\AudioController.cs" />
+=======
+>>>>>>> Version1
     <Compile Include="Assets\Scripts\FruitCollected.cs" />
   </ItemGroup>
   <ItemGroup>
