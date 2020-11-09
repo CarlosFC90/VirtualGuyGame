@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 8861513}
   - component: {fileID: 8861512}
   m_Layer: 5
-  m_Name: ButtonQuit
+  m_Name: ButtonOptions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ RectTransform:
   m_Children:
   - {fileID: 302880755}
   m_Father: {fileID: 389983505}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -219,7 +219,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1650198550}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: PlaySoundButton
+        m_MethodName: AnotherOptins
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1655,7 +1655,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Options
+  m_Text: Sound Off/On
 --- !u!222 &302880757
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2002,8 +2002,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1240223734}
-  - {fileID: 1252770591}
   - {fileID: 8861511}
+  - {fileID: 1252770591}
   m_Father: {fileID: 1650198549}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6271,7 +6271,7 @@ GameObject:
   - component: {fileID: 1252770593}
   - component: {fileID: 1252770592}
   m_Layer: 5
-  m_Name: ButtonOptionsM
+  m_Name: ButtonQuit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6290,7 +6290,7 @@ RectTransform:
   m_Children:
   - {fileID: 2089600480}
   m_Father: {fileID: 389983505}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6354,7 +6354,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1650198550}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: PlaySoundButton
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7838,6 +7838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionsPanel: {fileID: 389983504}
   clip: {fileID: 1650198551}
+  isMuted: 0
 --- !u!82 &1650198551
 AudioSource:
   m_ObjectHideFlags: 0
