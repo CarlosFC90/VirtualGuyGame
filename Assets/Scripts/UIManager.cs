@@ -3,12 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class UIManager : MonoBehaviour
 {
     public GameObject optionsPanel;
     public AudioSource clip;
     public bool isMuted = false;
+    SceneControl ctrScene;
+
+    private void Start()
+    {
+        ctrScene = GetComponent<SceneControl>();
+    }
 
     public void OptionsPanel()
     {
@@ -36,6 +44,8 @@ public class UIManager : MonoBehaviour
     {
         //Solo funciona cuando se realiza el ejecutable en pc
         Application.Quit();
+        Debug.Log("Finish");
+        ctrScene.RegisterOfEnd();
     }
 
     public void PlaySoundButton()

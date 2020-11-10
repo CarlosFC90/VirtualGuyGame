@@ -27,6 +27,7 @@ public class PlayerRespawn : MonoBehaviour
     {
         animator.Play("Hit");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //Debug.Log("Player Die");
     }
 
 }

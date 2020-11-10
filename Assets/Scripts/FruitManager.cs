@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,6 +15,7 @@ public class FruitManager : MonoBehaviour
 
     private void Start()
     {
+        
         totalFruitsInLevel = transform.childCount;
     }
 
@@ -32,10 +34,12 @@ public class FruitManager : MonoBehaviour
             transition.SetActive(true);
             Invoke("ChangeScene", 1);
         }
+        
     }
 
     void ChangeScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
 }
