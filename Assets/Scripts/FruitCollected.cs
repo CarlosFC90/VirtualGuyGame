@@ -15,7 +15,7 @@ public class FruitCollected : MonoBehaviour
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
             
             Destroy(gameObject, 0.5f);
-
+            //Debug.Log("Fruit Collected");
             clip.Play();
         }
     }
